@@ -12,8 +12,8 @@ const collection = [
             "Gavin Leatherwood",
             "Ross Lynch",
             "Michelle Gomez",
-        ]   
-        
+        ] , 
+        synopsis: "Sabrina Spellman est une adolescente presque comme les autres. Mi-humaine, mi-mortelle, la jeune femme tente de mener une vie normale à Greendale. Mais à l'aube de son seizième anniversaire Sabrina doit choisir entre le monde sorcier de sa famille et le monde humain de ses amis."
     }
 
     ,
@@ -30,7 +30,8 @@ const collection = [
             "Marc Ruchmann",
             "Joséphine Draï",
             "Sabrina Ouazani",
-        ]
+        ],
+        synopsis: "Deux ans après sa rupture avec Max, Elsa déprime et n'arrive toujours pas à aller de l'avant. Charlotte et Émilie, ses deux meilleures amies depuis toujours, décident alors d'engager un gigolo, Jules, afin qu'elle puisse oublier son ex, sans qu'elle le sache."
     }
     ,
     {
@@ -46,7 +47,8 @@ const collection = [
             "Drew Barrymore",
             "Liv Hewson",
             "Skyler Gisondo"
-        ]
+        ],
+        synopsis:"Dans la ville de Santa Clarita, Sheila et Joel sont les heureux parents d'une jeune fille nommée Abby. Mais un jour, Sheila se transforme en zombie et doit désormais apprendre à contrôler ses pulsions meurtrières…"
 
     }
     ,
@@ -64,6 +66,7 @@ const collection = [
             "Brian J. Smith",
             "Miguel Ángel Silvestre",
         ],
+        synopsis: "Huit individus éparpillés aux quatre coins du monde sont connectés par une soudaine et violente vision. Désormais liés, ils se retrouvent capables du jour au lendemain... Huit individus éparpillés aux quatre coins du monde sont connectés par une soudaine et violente vision."
     }
     ,
     {
@@ -80,6 +83,7 @@ const collection = [
             "Tati Gabrielle",
             "Jenna Ortega",
         ],
+        synopsis:"Joe Goldberg est un brillant jeune homme qui tient une librairie à New York. Un jour, il tombe amoureux d'une de ses clientes, Guinevere. La jeune femme, qui aspire à devenir écrivain, l'obsède complètement. Joe va l'espionner sur Internet pour savoir en permanence où elle se trouve et avec qui."
     }
     ,
     {
@@ -95,7 +99,8 @@ const collection = [
             "Finn Wolfhard",
             "Noah Schnapp",
             "Caleb McLaughlin",
-        ]
+        ],
+        synopsis: "A Hawkins, en 1983 dans l'Indiana. Lorsque Will Byers disparaît de son domicile, ses amis se lancent dans une recherche semée d'embûches pour le retrouver. Dans leur quête de réponses, les garçons rencontrent une étrange jeune fille en fuite."
 
     }
     ,
@@ -112,11 +117,12 @@ const collection = [
             "Kit Harington",
             "Sophie Turner",
             "Maisie Williams",
-        ]
+        ],
+        synopsis: "Après un été de dix années, un hiver rigoureux s'abat sur le Royaume avec la promesse d'un avenir des plus sombres. Pendant ce temps, complots et rivalités se jouent sur le continent pour s'emparer du Trône de Fer, le symbole du pouvoir absolu."
     }
     ,
     {
-        name: "WandaVision",
+        name: "Wanda Vision",
         picture: "assets/wanda.jpg",
         duration: 2021,
         genre: ["Science fiction","Action"],
@@ -128,7 +134,8 @@ const collection = [
             "Evan Peters",
             "Kathryn Hahn",
             "Kat Dennings",
-        ]
+        ],
+        synopsis:"WandaVision combine des éléments de sitcom traditionnelle à ceux de l'Univers Cinématographique Marvel. Wanda Maximoff alias Scarlet Witch et Vision sont des super-héros, vivant dans une banlieue idéalisée mais commençant à soupçonner que tout n'est peut-être pas ce qu'il paraît être..."
     }
     ,
     {
@@ -144,7 +151,8 @@ const collection = [
             "Daniel Gillies",
             "Phoebe Tonkin",
             "Claire Holt",
-        ]
+        ],
+        synopsis:"Niklaus Mikaelson retourne à la Nouvelle-Orléans pour détrôner l'un de ses anciens protégés, Marcel, qui a régné sur la ville en son absence. Klaus est également surpris de voir que Marcel est toujours en vie alors qu'il le pensait mort lors de l'incendie en 1919 qui a brulé la ville entière."
     }
     ,
     {
@@ -160,13 +168,13 @@ const collection = [
             "Leighton Meester",
             "Ed Westwick",
             "Chace Crawford",
-        ]
+        ],
+        synopsis:"La vie de la jeunesse dorée des élèves de deux écoles privées new-yorkaises, vue à travers les yeux ironiques d'une mystérieuse bloggeuse surnommée Gossip Girl. Entre amour et amitié, chacun tente de tirer son épingle du jeu, mais rien n'est jamais simple derrière des apparences parfaites..."
     }
-
 ]
-
 for(let elem of collection){
-    let carte= document.createElement('div');
+    let carte = document.createElement('div');
+    carte.classList.add("carte")
     document.getElementsByClassName('container')[0].appendChild(carte);
 
     //name
@@ -205,8 +213,31 @@ for(let elem of collection){
     carte.appendChild(cast)
 
      //images
-     let image= document.createElement('img');
-     image.classList.add()
-     image.src=elem['picture'];
-     carte.appendChild(image);
+    let divimg=document.createElement("div")
+    let image= document.createElement('img');
+    let syno=document.createElement('p')
+    divimg.classList.add("photos");
+    image.classList.add("image");
+    syno.classList.add('synopsis');
+    syno.textContent=elem['synopsis'];
+    image.src=elem['picture'];
+    carte.appendChild(divimg)
+    divimg.appendChild(image)
+    divimg.appendChild(syno)
+
+
+    //bloc texte sans image
+    let sansimg= document.createElement("div")
+    sansimg.classList.add("sansimage")
+    carte.appendChild(sansimg)
+    sansimg.appendChild(names)
+    sansimg.appendChild(dur)
+    sansimg.appendChild(gen)
+    sansimg.appendChild(sea)
+    sansimg.appendChild(ep)
+    sansimg.appendChild(cast)
+
+    //bloc image 
+
 }
+
