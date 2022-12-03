@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(to bottom left, #ebf4f5, #b5c6e0);
+}
+
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marcker", cursive;
+  font-style: italic;
 }
 
 div {
@@ -15,13 +20,14 @@ div {
   flex-direction: row;
   align-items: center;
 }
-div img {
+
+img {
   display: flex;
   flex-direction: row;
   width: 40vw;
   margin: 3vw;
-  padding-bottom: 10vw;
   border-radius: 10%;
+  border: 1px solid white;
 }
 
 div.container {
@@ -33,7 +39,6 @@ div.container {
 .photos {
   display: flex;
   flex-direction: column;
-  padding: 5vw;
   width: 50vw;
   height: 200vw;
   border-right: none;
@@ -62,7 +67,7 @@ div.container {
   width: fit-content;
 }
 .sansimage h2 {
-  font-family: "Mr Dafoe", cursive;
+  font-family: "Cinzel", serif;
   text-align: center;
   font-size: 24px;
   /* for desktop &:hover{
@@ -83,8 +88,32 @@ div.container {
 }
 
 .synopsis {
-  border-radius: 5%;
   text-align: center;
   font-family: "Kanit", sans-serif;
   color: black;
+  font-size: 16px;
+  padding: 6vw;
+}
+
+.tomato, .popcorn {
+  width: 10px;
+  background: none;
+  border: none;
+  display: flex;
+}
+
+.avispopcorn {
+  display: flex;
+  font-size: 8px;
+  font-family: "Caveat", cursive;
+}
+
+.rating {
+  width: 40vw;
+}
+
+.avistomate {
+  display: flex;
+  font-size: 8px;
+  font-family: "Caveat", cursive;
 }/*# sourceMappingURL=style.css.map */

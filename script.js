@@ -13,7 +13,11 @@ const collection = [
             "Ross Lynch",
             "Michelle Gomez",
         ] , 
-        synopsis: "Sabrina Spellman est une adolescente presque comme les autres. Mi-humaine, mi-mortelle, la jeune femme tente de mener une vie normale à Greendale. Mais à l'aube de son seizième anniversaire Sabrina doit choisir entre le monde sorcier de sa famille et le monde humain de ses amis."
+        synopsis: "Sabrina Spellman est une adolescente presque comme les autres. Mi-humaine, mi-mortelle, la jeune femme tente de mener une vie normale à Greendale. Mais à l'aube de son seizième anniversaire Sabrina doit choisir entre le monde sorcier de sa famille et le monde humain de ses amis.",
+        avist: "82% AVG TOMATOMETER",
+        avisp:"70% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
 
     ,
@@ -31,7 +35,8 @@ const collection = [
             "Joséphine Draï",
             "Sabrina Ouazani",
         ],
-        synopsis: "Deux ans après sa rupture avec Max, Elsa déprime et n'arrive toujours pas à aller de l'avant. Charlotte et Émilie, ses deux meilleures amies depuis toujours, décident alors d'engager un gigolo, Jules, afin qu'elle puisse oublier son ex, sans qu'elle le sache."
+        synopsis: "Deux ans après sa rupture avec Max, Elsa déprime et n'arrive toujours pas à aller de l'avant. Charlotte et Émilie, ses deux meilleures amies depuis toujours, décident alors d'engager un gigolo, Jules, afin qu'elle puisse oublier son ex, sans qu'elle le sache.",
+        
     }
     ,
     {
@@ -48,8 +53,11 @@ const collection = [
             "Liv Hewson",
             "Skyler Gisondo"
         ],
-        synopsis:"Dans la ville de Santa Clarita, Sheila et Joel sont les heureux parents d'une jeune fille nommée Abby. Mais un jour, Sheila se transforme en zombie et doit désormais apprendre à contrôler ses pulsions meurtrières…"
-
+        synopsis:"Dans la ville de Santa Clarita, Sheila et Joel sont les heureux parents d'une jeune fille nommée Abby. Mais un jour, Sheila se transforme en zombie et doit désormais apprendre à contrôler ses pulsions meurtrières…",
+        avist: "89% AVG TOMATOMETER",
+        avisp:"94% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
     ,
     {
@@ -66,7 +74,11 @@ const collection = [
             "Brian J. Smith",
             "Miguel Ángel Silvestre",
         ],
-        synopsis: "Huit individus éparpillés aux quatre coins du monde sont connectés par une soudaine et violente vision. Désormais liés, ils se retrouvent capables du jour au lendemain... Huit individus éparpillés aux quatre coins du monde sont connectés par une soudaine et violente vision."
+        synopsis: "Huit individus éparpillés aux quatre coins du monde sont connectés par une soudaine et violente vision. Désormais liés, ils se retrouvent capables du jour au lendemain... Huit individus éparpillés aux quatre coins du monde sont connectés par une soudaine et violente vision.",
+        avist: "86% AVG TOMATOMETER",
+        avisp:"89% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
     ,
     {
@@ -83,7 +95,11 @@ const collection = [
             "Tati Gabrielle",
             "Jenna Ortega",
         ],
-        synopsis:"Joe Goldberg est un brillant jeune homme qui tient une librairie à New York. Un jour, il tombe amoureux d'une de ses clientes, Guinevere. La jeune femme, qui aspire à devenir écrivain, l'obsède complètement. Joe va l'espionner sur Internet pour savoir en permanence où elle se trouve et avec qui."
+        synopsis:"Joe Goldberg est un brillant jeune homme qui tient une librairie à New York. Un jour, il tombe amoureux d'une de ses clientes, Guinevere. La jeune femme, qui aspire à devenir écrivain, l'obsède complètement. Joe va l'espionner sur Internet pour savoir en permanence où elle se trouve et avec qui.",
+        avist: "91% AVG TOMATOMETER",
+        avisp:"77% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
     ,
     {
@@ -100,8 +116,11 @@ const collection = [
             "Noah Schnapp",
             "Caleb McLaughlin",
         ],
-        synopsis: "A Hawkins, en 1983 dans l'Indiana. Lorsque Will Byers disparaît de son domicile, ses amis se lancent dans une recherche semée d'embûches pour le retrouver. Dans leur quête de réponses, les garçons rencontrent une étrange jeune fille en fuite."
-
+        synopsis: "A Hawkins, en 1983 dans l'Indiana. Lorsque Will Byers disparaît de son domicile, ses amis se lancent dans une recherche semée d'embûches pour le retrouver. Dans leur quête de réponses, les garçons rencontrent une étrange jeune fille en fuite.",
+        avist: "92% AVG TOMATOMETER",
+        avisp:"90% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
     ,
     {
@@ -118,7 +137,12 @@ const collection = [
             "Sophie Turner",
             "Maisie Williams",
         ],
-        synopsis: "Après un été de dix années, un hiver rigoureux s'abat sur le Royaume avec la promesse d'un avenir des plus sombres. Pendant ce temps, complots et rivalités se jouent sur le continent pour s'emparer du Trône de Fer, le symbole du pouvoir absolu."
+        synopsis: "Après un été de dix années, un hiver rigoureux s'abat sur le Royaume avec la promesse d'un avenir des plus sombres. Pendant ce temps, complots et rivalités se jouent sur le continent pour s'emparer du Trône de Fer, le symbole du pouvoir absolu.",
+        avist: "89% AVG TOMATOMETER",
+        avisp:"85% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
+        
     }
     ,
     {
@@ -135,7 +159,11 @@ const collection = [
             "Kathryn Hahn",
             "Kat Dennings",
         ],
-        synopsis:"WandaVision combine des éléments de sitcom traditionnelle à ceux de l'Univers Cinématographique Marvel. Wanda Maximoff alias Scarlet Witch et Vision sont des super-héros, vivant dans une banlieue idéalisée mais commençant à soupçonner que tout n'est peut-être pas ce qu'il paraît être..."
+        synopsis:"WandaVision combine des éléments de sitcom traditionnelle à ceux de l'Univers Cinématographique Marvel. Wanda Maximoff alias Scarlet Witch et Vision sont des super-héros, vivant dans une banlieue idéalisée mais commençant à soupçonner que tout n'est peut-être pas ce qu'il paraît être...",
+        avist: "91% AVG TOMATOMETER",
+        avisp:"88% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
     ,
     {
@@ -152,7 +180,11 @@ const collection = [
             "Phoebe Tonkin",
             "Claire Holt",
         ],
-        synopsis:"Niklaus Mikaelson retourne à la Nouvelle-Orléans pour détrôner l'un de ses anciens protégés, Marcel, qui a régné sur la ville en son absence. Klaus est également surpris de voir que Marcel est toujours en vie alors qu'il le pensait mort lors de l'incendie en 1919 qui a brulé la ville entière."
+        synopsis:"Niklaus Mikaelson retourne à la Nouvelle-Orléans pour détrôner l'un de ses anciens protégés, Marcel, qui a régné sur la ville en son absence. Klaus est également surpris de voir que Marcel est toujours en vie alors qu'il le pensait mort lors de l'incendie en 1919 qui a brulé la ville entière.",
+        avist: "84% AVG TOMATOMETER",
+        avisp:"69% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
     ,
     {
@@ -169,7 +201,11 @@ const collection = [
             "Ed Westwick",
             "Chace Crawford",
         ],
-        synopsis:"La vie de la jeunesse dorée des élèves de deux écoles privées new-yorkaises, vue à travers les yeux ironiques d'une mystérieuse bloggeuse surnommée Gossip Girl. Entre amour et amitié, chacun tente de tirer son épingle du jeu, mais rien n'est jamais simple derrière des apparences parfaites..."
+        synopsis:"La vie de la jeunesse dorée des élèves de deux écoles privées new-yorkaises, vue à travers les yeux ironiques d'une mystérieuse bloggeuse surnommée Gossip Girl. Entre amour et amitié, chacun tente de tirer son épingle du jeu, mais rien n'est jamais simple derrière des apparences parfaites...",
+        avist: "84% AVG TOMATOMETER",
+        avisp:"78% AVG AUDIENCE SCORE",
+        tomato: "assets/tomato.png",
+        popcorn: "assets/popcorn.png"
     }
 ]
 for(let elem of collection){
@@ -238,12 +274,32 @@ for(let elem of collection){
     sansimg.appendChild(cast)
 
     //bloc rating 
+    let tom= document.createElement('img')
+    tom.classList.add("tomato")
+    tom.src=elem["tomato"]
+    let rate= document.createElement('div')
+    rate.classList.add("rating")
+    let pop=document.createElement('img')
+    pop.classList.add("popcorn")
+    pop.src=elem["popcorn"]
+    let avist= document.createElement("div")
+    avist.classList.add("avistomate")
+    let avisp=document.createElement("div")
+    avisp.classList.add("avispopcorn")
+    let textp= document.createElement("p")
+    textp.classList.add("textepopcorn")
+    textp.textContent=elem ['avisp']
+    let textt= document.createElement("p")
+    textt.classList.add("texttomato")
+    textt.textContent=elem ['avist']
+    divimg.appendChild(rate)
+    avist.appendChild(tom)
+    avist.appendChild(textt)
+    avisp.appendChild(pop)
+    avisp.appendChild(textp)
+    rate.appendChild(avisp)
+    rate.appendChild(avist)
+
+
   
 }
-
-
-let rate=document.createElement("div")
-bouton.classList.add("rating__star")
-rate.classList.add("rating")
-divimg.appendChild(rate)
-rate.appendChild(bouton)
