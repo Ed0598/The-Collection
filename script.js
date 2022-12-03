@@ -237,7 +237,13 @@ for(let elem of collection){
     sansimg.appendChild(ep)
     sansimg.appendChild(cast)
 
-    //bloc image 
-
+    //bloc rating 
+  
 }
 
+
+let rate=document.createElement("div")
+bouton.classList.add("rating__star")
+rate.classList.add("rating")
+divimg.appendChild(rate)
+rate.appendChild(bouton)
