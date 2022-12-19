@@ -1,4 +1,4 @@
-const collection = [
+/*const collection = [
     {
         name: "Chilling Adventures of Sabrina",
         picture: "assets/Sabrina.jpg",
@@ -207,99 +207,104 @@ const collection = [
         tomato: "assets/tomato.png",
         popcorn: "assets/popcorn.png"
     }
-]
-for(let elem of collection){
-    let carte = document.createElement('div');
-    carte.classList.add("carte")
-    document.getElementsByClassName('container')[0].appendChild(carte);
+]*/
+fetch("collection.json")
+.then((response)=>response.json())
+.then((json)=> {
+    let collection = json["collection"]
+    for(let elem of collection){
+        let carte = document.createElement('div');
+        carte.classList.add("carte")
+        document.getElementsByClassName('container')[0].appendChild(carte);
 
-    //name
-    let names= document.createElement('h2');
-    names.textContent=elem['name'];
-    carte.appendChild(names);
+        //name
+        let names= document.createElement('h2');
+        names.textContent=elem['name'];
+        carte.appendChild(names);
 
-    //duration
-    let dur= document.createElement("p")
-    dur.classList.add("duration")
-    dur.textContent=elem['duration'];
-    carte.appendChild(dur)
+        //duration
+        let dur= document.createElement("p")
+        dur.classList.add("duration")
+        dur.textContent=elem['duration'];
+        carte.appendChild(dur)
 
-    //genre
-    let gen= document.createElement("p")
-    gen.classList.add("genre")
-    gen.textContent=elem['genre'];
-    carte.appendChild(gen)
+        //genre
+        let gen= document.createElement("p")
+        gen.classList.add("genre")
+        gen.textContent=elem['genre'];
+        carte.appendChild(gen)
 
-    //seasons
-    let sea= document.createElement("p")
-    sea.classList.add("seasons")
-    sea.textContent=elem['seasons'];
-    carte.appendChild(sea)
+        //seasons
+        let sea= document.createElement("p")
+        sea.classList.add("seasons")
+        sea.textContent=elem['seasons'];
+        carte.appendChild(sea)
 
-    //episodes
-    let ep= document.createElement("p")
-    ep.classList.add("episodes")
-    ep.textContent=elem['episodes'];
-    carte.appendChild(ep)
+        //episodes
+        let ep= document.createElement("p")
+        ep.classList.add("episodes")
+        ep.textContent=elem['episodes'];
+        carte.appendChild(ep)
 
-    //casting
-    let cast= document.createElement("p")
-    cast.classList.add("casting")
-    cast.textContent=elem['casting'];
-    carte.appendChild(cast)
+        //casting
+        let cast= document.createElement("p")
+        cast.classList.add("casting")
+        cast.textContent=elem['casting'];
+        carte.appendChild(cast)
 
-     //images
-    let divimg=document.createElement("div")
-    let image= document.createElement('img');
-    let syno=document.createElement('p')
-    divimg.classList.add("photos");
-    image.classList.add("image");
-    syno.classList.add('synopsis');
-    syno.textContent=elem['synopsis'];
-    image.src=elem['picture'];
-    carte.appendChild(divimg)
-    divimg.appendChild(image)
-    divimg.appendChild(syno)
-
-
-    //bloc texte sans image
-    let sansimg= document.createElement("div")
-    sansimg.classList.add("sansimage")
-    carte.appendChild(sansimg)
-    sansimg.appendChild(names)
-    sansimg.appendChild(dur)
-    sansimg.appendChild(gen)
-    sansimg.appendChild(sea)
-    sansimg.appendChild(ep)
-    sansimg.appendChild(cast)
-
-    //bloc rating 
-    let tom= document.createElement('img')
-    tom.classList.add("tomato")
-    tom.src=elem["tomato"]
-    let rate= document.createElement('div')
-    rate.classList.add("rating")
-    let pop=document.createElement('img')
-    pop.classList.add("popcorn")
-    pop.src=elem["popcorn"]
-    let avist= document.createElement("div")
-    avist.classList.add("avistomate")
-    let avisp=document.createElement("div")
-    avisp.classList.add("avispopcorn")
-    let textp= document.createElement("p")
-    textp.classList.add("textepopcorn")
-    textp.textContent=elem ['avisp']
-    let textt= document.createElement("p")
-    textt.classList.add("texttomato")
-    textt.textContent=elem ['avist']
-    divimg.appendChild(rate)
-    avist.appendChild(tom)
-    avist.appendChild(textt)
-    avisp.appendChild(pop)
-    avisp.appendChild(textp)
-    rate.appendChild(avisp)
-    rate.appendChild(avist)
+        //images
+        let divimg=document.createElement("div")
+        let image= document.createElement('img');
+        let syno=document.createElement('p')
+        divimg.classList.add("photos");
+        image.classList.add("image");
+        syno.classList.add('synopsis');
+        syno.textContent=elem['synopsis'];
+        image.src=elem['picture'];
+        carte.appendChild(divimg)
+        divimg.appendChild(image)
+        divimg.appendChild(syno)
 
 
-  
-}
+        //bloc texte sans image
+        let sansimg= document.createElement("div")
+        sansimg.classList.add("sansimage")
+        carte.appendChild(sansimg)
+        sansimg.appendChild(names)
+        sansimg.appendChild(dur)
+        sansimg.appendChild(gen)
+        sansimg.appendChild(sea)
+        sansimg.appendChild(ep)
+        sansimg.appendChild(cast)
+
+        //bloc rating 
+        let tom= document.createElement('img')
+        tom.classList.add("tomato")
+        tom.src=elem["tomato"]
+        let rate= document.createElement('div')
+        rate.classList.add("rating")
+        let pop=document.createElement('img')
+        pop.classList.add("popcorn")
+        pop.src=elem["popcorn"]
+        let avist= document.createElement("div")
+        avist.classList.add("avistomate")
+        let avisp=document.createElement("div")
+        avisp.classList.add("avispopcorn")
+        let textp= document.createElement("p")
+        textp.classList.add("textepopcorn")
+        textp.textContent=elem ['avisp']
+        let textt= document.createElement("p")
+        textt.classList.add("texttomato")
+        textt.textContent=elem ['avist']
+        divimg.appendChild(rate)
+        avist.appendChild(tom)
+        avist.appendChild(textt)
+        avisp.appendChild(pop)
+        avisp.appendChild(textp)
+        rate.appendChild(avisp)
+        rate.appendChild(avist)
+    }
+})
+    
+
+
